@@ -14,6 +14,7 @@ object Main_cap3 {
     // Cap 3
 
     //ejercicios3.ej_parquet()
-    DataFrameAPI.createDataFrame()
+    //DataFrameAPI.createDataFrame()
+    DataFrameAPI.definiendoSchema()
   }
 }

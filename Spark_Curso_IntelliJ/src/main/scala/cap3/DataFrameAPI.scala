@@ -2,6 +2,7 @@ package cap3
 
 import org.apache.spark.sql.functions.avg
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types._
 
 object DataFrameAPI {
   def createDataFrame(): Unit = {
@@ -16,5 +17,18 @@ object DataFrameAPI {
     val avgDF = dataDF.groupBy("name").agg(avg("age"))
     // Show the results of the final execution
     avgDF.show()
+  }
+  def definiendoSchema(): Unit ={
+    //Definiendo esquema
+
+    // Programando
+    val schema = StructType(Array(StructField("author", StringType, false),
+      StructField("title", StringType, false),
+      StructField("pages", IntegerType, false)))
+    print("\nSchema programando: " + schema + "\n")
+
+    //In DDL
+    val schemaDDL = "author STRING, title STRING, pages INT"
+    print("\nSchema en DDL: " + schema+ "\n")
   }
 }
