@@ -13,6 +13,7 @@ object Main_cap4 {
 
     // Cap 3
 
-    ejercicios4.ej_libro_tempview()
+    //ejercicios4.ej_libro_tempview()
+    Parquet.read_parquet_into_sql()
   }
 }

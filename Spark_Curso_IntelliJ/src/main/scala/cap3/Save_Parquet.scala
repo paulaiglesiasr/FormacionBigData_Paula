@@ -27,7 +27,7 @@ object Save_Parquet {
       .write
       .format("parquet")
       .mode("overwrite")
-      .save("../../Datasets_CursoSpark/cap3_parquet.parquet")
+      .save("Datos/cap3_parquet.parquet")
 
 
   }

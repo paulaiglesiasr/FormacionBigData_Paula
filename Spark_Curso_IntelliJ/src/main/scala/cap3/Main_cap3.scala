@@ -13,10 +13,10 @@ object Main_cap3 {
 
     // Cap 3
 
-    //Save_parquet.ej_parquet()
+    Save_Parquet.ej_parquet()
     //DataFrameAPI.createDataFrame()
     //DataFrameAPI.definiendoSchema()
     //Read_From_JSON.readFromJSON(Array("Datos/blogs.json"))
-    Operaciones_filas_col.op(Array("Datos/blogs.json"))
+    //Operaciones_filas_col.op(Array("Datos/blogs.json"))
   }
 }
