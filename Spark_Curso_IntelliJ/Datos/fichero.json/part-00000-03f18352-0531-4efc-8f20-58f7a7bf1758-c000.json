@@ -1,0 +1,5 @@
+{"firstname":"James ","middlename":"","lastname":"Smith","dob":"36636","gender":"M","salary":3000}
+{"firstname":"Michael ","middlename":"Rose","lastname":"","dob":"40288","gender":"M","salary":4000}
+{"firstname":"Robert ","middlename":"","lastname":"Williams","dob":"42114","gender":"M","salary":4000}
+{"firstname":"Maria ","middlename":"Anne","lastname":"Jones","dob":"39192","gender":"F","salary":4000}
+{"firstname":"Jen","middlename":"Mary","lastname":"Brown","dob":"","gender":"F","salary":-1}
