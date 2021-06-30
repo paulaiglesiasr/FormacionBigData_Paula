@@ -13,7 +13,7 @@ object Parquet {
                       " USING parquet" +
                       " OPTIONS (" +
                                 " path \"Datos/cap3_parquet.parquet/\" )")
-    
+
     spark.sql("SELECT * FROM us_delay_flights_tbl").show()
   }
 }

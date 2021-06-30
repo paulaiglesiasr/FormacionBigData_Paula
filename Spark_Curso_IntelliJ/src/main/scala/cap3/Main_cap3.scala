@@ -16,7 +16,8 @@ object Main_cap3 {
     Save_Parquet.ej_parquet()
     //DataFrameAPI.createDataFrame()
     //DataFrameAPI.definiendoSchema()
-    //Read_From_JSON.readFromJSON(Array("Datos/blogs.json"))
-    //Operaciones_filas_col.op(Array("Datos/blogs.json"))
+    //Read_From_JSON.readFromJSON(Array("Datos/cap3/blogs.json"))
+    //Operaciones_filas_col.op(Array("Datos/cap3/blogs.json"))
+    //ejercicios_extra.leer_csv()
   }
 }

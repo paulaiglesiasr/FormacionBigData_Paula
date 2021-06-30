@@ -5,6 +5,7 @@ import org.apache.spark.sql.SparkSession
 object Save_Parquet {
   def ej_parquet(){
 
+    import org.apache.spark.sql.SparkSession
     val spark = SparkSession
       .builder
       .appName("MnMCount")
@@ -19,16 +20,15 @@ object Save_Parquet {
     val columns = Seq("firstname","middlename","lastname","dob","gender","salary")
 
     import spark.sqlContext.implicits._
-    val df = data.toDF(columns:_*).persist()
+    val df = data.toDF(columns:_*)
 
+    println("\n Numero de particiones: "+ df.rdd.getNumPartitions)
 
-    df
-      .coalesce(4)
+    df.repartition(4)
       .write
-      .format("parquet")
+      .format("json")
       .mode("overwrite")
-      .save("Datos/cap3_parquet.parquet")
-
+      .save("/Filestore/Tables/example_cap3_json")
 
   }
 }
