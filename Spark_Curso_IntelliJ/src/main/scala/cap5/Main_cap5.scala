@@ -15,6 +15,8 @@ object Main_cap5 {
 
     //PostreSQL.helloWorld()
     //MySQL.helloWorld()
-    MySQL_empleados.consulta1()
+    //MySQL_empleados_SQL.consulta1() // 12s
+    //MySQL_empleados_API_DF.consulta1()
+    EjBasico_y_comparacionSQLAPI.comparacion()
   }
 }
