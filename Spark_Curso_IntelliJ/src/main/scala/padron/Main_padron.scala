@@ -11,7 +11,10 @@ object Main_padron {
     // Cap 5
 
     //"COD_DISTRITO";"DESC_DISTRITO";"COD_DIST_BARRIO";"DESC_BARRIO";"COD_BARRIO";"COD_DIST_SECCION";"COD_SECCION";"COD_EDAD_INT";"EspanolesHombres";"EspanolesMujeres";"ExtranjerosHombres";"ExtranjerosMujeres"
+
     //Ej1_CreacionTablas.main()
-    Ej1_CreacionTablas_expresionregular.main()
+    //Ej1_CreacionTablas_expresionregular.main()
+
+    Ej2_parquet.main()
   }
 }

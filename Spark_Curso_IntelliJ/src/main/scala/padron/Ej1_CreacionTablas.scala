@@ -71,9 +71,9 @@ object Ej1_CreacionTablas {
     spark.sql("CREATE TABLE padron_txt_2 AS " +
       "                               (SELECT  " +
       "                                       COD_DISTRITO, " +
-      "                                       TRIM(DESC_DISTRITO), " +
+      "                                       trim(DESC_DISTRITO) DESC_DISTRITO , " +
       "                                       COD_DIST_BARRIO, " +
-      "                                       TRIM(DESC_BARRIO), " +
+      "                                       trim(DESC_BARRIO) DESC_BARRIO, " +
       "                                       COD_BARRIO, " +
       "                                       COD_DIST_SECCION, " +
       "                                       COD_SECCION, " +
@@ -85,6 +85,7 @@ object Ej1_CreacionTablas {
       "                                FROM padron_txt) ")
 
     val padronDF2 = spark.sql("SELECT * FROM padron_txt_2")
+    println("\nTABLA padron_txt_2: \n")
     padronDF2.show()
 
      //1.4) Investigar y entender la diferencia de incluir la palabra LOCAL en el comando LOAD DATA.
