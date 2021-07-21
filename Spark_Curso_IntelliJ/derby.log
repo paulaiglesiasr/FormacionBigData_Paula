@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Thu Jul 08 09:16:23 CEST 2021:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-017a-84f9-87dd-0000113ffc90 
-on database directory C:\Users\paula.iglesias\Documents\FormacionBigData_Paula\Spark_Curso_IntelliJ\metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@13d019a4 
+Fri Jul 16 10:08:15 CEST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-017a-ae5b-e0ae-00001bd8b260 
+on database directory C:\Users\paula.iglesias\Documents\FormacionBigData_Paula\Spark_Curso_IntelliJ\metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4eb73cc8 
 Loaded from file:/C:/Users/paula.iglesias/.m2/repository/org/apache/derby/derby/10.12.1.1/derby-10.12.1.1.jar
 java.vendor=Amazon.com Inc.
 java.runtime.version=1.8.0_292-b10

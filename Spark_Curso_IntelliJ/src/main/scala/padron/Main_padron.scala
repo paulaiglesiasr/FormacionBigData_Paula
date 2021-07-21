@@ -1,6 +1,5 @@
 package padron
 
-import cap5.EjBasico_y_comparacionSQLAPI
 import org.apache.spark.{SparkConf, SparkContext}
 
 object Main_padron {
@@ -15,6 +14,10 @@ object Main_padron {
     //Ej1_CreacionTablas.main()
     //Ej1_CreacionTablas_expresionregular.main()
 
-    Ej2_parquet.main()
+    //Ej2_parquet.main()
+
+    //Ej3_Impala.main()
+
+    Ej4_TablasParticionadas.main()
   }
 }

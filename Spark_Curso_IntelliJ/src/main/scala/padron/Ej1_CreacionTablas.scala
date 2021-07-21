@@ -23,6 +23,7 @@ object Ej1_CreacionTablas {
       .config("spark.sql.warehouse.dir", "C:/Users/paula.iglesias/Documents/FormacionBigData_Paula/Spark_Curso_IntelliJ/hive_location")
       .getOrCreate()
 
+    spark.sql("set spark.driver.allowMultipleContexts = true)")
     // 1.1) Crear la BD
 
     spark.sql("CREATE DATABASE IF NOT EXISTS datos_padron")

@@ -14,9 +14,9 @@ object Ej2_parquet {
       .config("spark.sql.warehouse.dir", "C:/Users/paula.iglesias/Documents/FormacionBigData_Paula/Spark_Curso_IntelliJ/hive_location")
       .getOrCreate()
 
-    /* 2.2) Crear tabla hive guardada en formato parquet a partir de padron_txt */
-
     spark.sql("USE datos_padron")
+
+    /* 2.2) Crear tabla hive guardada en formato parquet a partir de padron_txt */
 
     spark.sql("DROP TABLE IF EXISTS padron_parquet")
 
@@ -39,8 +39,8 @@ object Ej2_parquet {
     /* 2.6) Comparar tamaño de los dicheros de los datos de las tablas */
 
     println("\n padron_txt " + spark.read.table("padron_txt").queryExecution.analyzed.stats)
-    println("\n padron_txt_2 " + spark.read.table("padron_txt").queryExecution.analyzed.stats)
-    println("\n padron_parquet " + spark.read.table("padron_txt").queryExecution.analyzed.stats)
-    println("\n padron_parquet_2 " + spark.read.table("padron_txt").queryExecution.analyzed.stats)
+    println("\n padron_txt_2 " + spark.read.table("padron_txt_2").queryExecution.analyzed.stats)
+    println("\n padron_parquet " + spark.read.table("padron_parquet").queryExecution.analyzed.stats)
+    println("\n padron_parquet_2 " + spark.read.table("padron_parquet_2").queryExecution.analyzed.stats)
   }
 }
